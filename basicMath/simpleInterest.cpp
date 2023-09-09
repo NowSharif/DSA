@@ -1,4 +1,4 @@
-//Program to 
+//Program to Find the Simple Interest
 
 #include <iostream>
 using namespace std;
