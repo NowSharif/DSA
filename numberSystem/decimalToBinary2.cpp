@@ -15,13 +15,8 @@ int main(){
   float ans =0, i=0;
   while(num>0){
     int rem = (num&1);
-    float mul = pow(10, i++);
-    ans+= rem*mul;
+    ans+= rem*pow(10, i++);
     num>>=1;
-    
-    
-
-    cout << "ans: " << ans << " , num: " << num  << ", rem: " << rem << endl;
     
   }
 
@@ -30,3 +25,14 @@ int main(){
 
     return 0;
 }
+
+
+/*
+
+Output:
+Enter a decimal number(in base 10): 
+18
+The binary value of 18(in base 2) is: 10010
+
+
+*/
