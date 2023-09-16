@@ -1,6 +1,7 @@
 
 
 //Program to move all negative elements of an array to left end of the array
+//  order not maintained
 
 
 #include <iostream>
@@ -54,7 +55,8 @@ void moveNegativesToLeft2(int arr[], int n){
 int main(){
 
     int n = 7;
-    int arr[7] = {23, -7, 12, -10, -11, 40, 60};
+    // int arr[7] = {23, -7, 12, -10, -11, 40, 60};
+    int arr[8] = {1, -1, 3, 2, -7, -5, 11, 6};
 
     cout << "\nPrinting the array before the operation:" << endl;
     printArray(arr, n);
