@@ -23,6 +23,18 @@ void matrixTranspose(int arr[][4], int m , int n){
 
 }
 
+
+void matrixTranspose2(int arr[][4], int m , int n){
+    int sum = 0;
+    for(int i=0; i<m; ++i){
+        for(int j=0; j<i;++j){
+            swap(arr[i][j], arr[j][i]);
+        }
+       
+    }
+
+}
+
 int main(){
 
     
@@ -32,7 +44,8 @@ int main(){
     cout << "Printing before transpose: " << endl;
     printMatrix(arr, 4, 4);
 
-    matrixTranspose(arr, 4, 4);
+    // matrixTranspose(arr, 4, 4);
+    matrixTranspose2(arr, 4, 4);
 
     cout << "Printing after transpose: " << endl;
     printMatrix(arr, 4, 4);
