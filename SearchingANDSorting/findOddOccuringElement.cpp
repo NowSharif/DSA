@@ -1,5 +1,7 @@
-// Find the odd occuring element in an array (not sorted)...........no same elements would be next to each other more than 3 times
-
+// Find the odd occuring element in an array (not sorted)...........no same elements would be next to each other more than 2 times
+//540. Single Element in a Sorted Array
+// https://leetcode.com/problems/single-element-in-a-sorted-array/
+//TC=O(logN) ; SC=0(1)
 
 #include <iostream>
 #include <vector>
