@@ -1,5 +1,5 @@
 
-
+//Practicing taking input to char array & printing char array as output 
 #include <iostream>
 #include <string.h>
 using namespace std;
