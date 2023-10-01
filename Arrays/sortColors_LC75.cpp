@@ -85,16 +85,19 @@ void sortColors3(vector<int> &v) {
   while (i <= r) {
     if (v[i] == 0) {
       swap(v[i], v[l]);
-      i++;
+      i++; // we dont need to check what we got from l index to i index - as it will be 1 only
       l++;
     }
 
     else if (v[i] == 2) {
       swap(v[i], v[r]);
-      r--;
-    } else { // v[i]==1
+      r--; //we need to check what we got from r index to i index - whether it is 0 or 1
+    } 
+    
+    else { // v[i]==1
       i++;
     }
+
   }
 }
 
